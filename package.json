@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/anek-tamil": "^5.2.7",
     "@fontsource-variable/victor-mono": "^5.2.8",
     "astro": "^4.0.0",
     "prismjs": "^1.30.0"

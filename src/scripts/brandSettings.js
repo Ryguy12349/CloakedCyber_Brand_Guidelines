@@ -36,7 +36,7 @@ export const brandSettings = {
     favicon: "src/assets/CloakedCyber Profile Pic.png", // Add favicon URL here
     typography: {
         primaryFont: "Victor Mono Variable",  // this will automatically get set as the page font
-        secondaryFont: "Victor Mono Variable", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
+        secondaryFont: "Anek Tamil Variable", // dont be a bum, go find some google/adobe fonts you like. just make sure to load them in the stylesheet or Layout astro file 
         baseSize: "16px",
         lineHeight: "1.5",
         paragraphSpacing: "2"
