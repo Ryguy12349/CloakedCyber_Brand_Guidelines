@@ -1,5 +1,8 @@
 ---
 import InstructionNote from '../InstructionNote.astro';
+
+import Image from 'astro/components/Image.astro';
+import join_now from '../../assets/join_now.webp';
 ---
 <section id="imagery">
     <h2>Imagery</h2>
@@ -9,23 +12,42 @@ import InstructionNote from '../InstructionNote.astro';
     </InstructionNote>
 
     <h3>Multimedia Policies</h3>
-    <ul>
-        <li><strong>Text in Images:</strong> [Define your policy regarding text embedded directly into images vs. rendered in code]</li>
-        <li><strong>Video & Audio:</strong> [Define your accessibility requirements for video captions and audio transcripts]</li>
-        <li><strong>Motion Control:</strong> [Define your rules and restrictions for flashing, blinking, or auto-playing content]</li>
+    <ul class="body-list">
+        <!-- [Define your policy regarding text embedded directly into images vs. rendered in code] -->
+        <li><strong>Text in Images</strong>, is not to be used.
+            It is not possible to be read by screen readers and can easily fail to be readible in size changes.
+            In the case of ads, posters, and other print being redisplayed un web give a breif description in alt text.</li>
+        <!-- [Define your accessibility requirements for video captions and audio transcripts] -->
+        <li><strong>Video & Audio</strong>, clear and accurate captions and transcripts provided for all video and audio content.
+            Captions should be able to give a full description of the audio content.
+            This includes things like giving a brief but real explanation of music and sound effects.</li>
+        <!-- [Define your rules and restrictions for flashing, blinking, or auto-playing content] -->
+        <li><strong>Motion Control</strong>, controls over all interactive elements and motion should be available to users.
+            This includes providing options to pause, stop, and reduce motion.
+            Blinking or flashing content should be avoided.
+            If used should be limited to 3 flashes a second.</li>
     </ul>
 
     <h3>Alt-Text Style Guide</h3>
     <div class="image-grid">
         <div>
             <div class="placeholder-box" style="min-height: 200px;">
-                [Image 1 Placeholder]
+                <Image 
+                    src={join_now} 
+                    alt=" " 
+                    width="200"
+                />
             </div>
-            <p><strong>Alt-Text:</strong> "[Write descriptive alt text here for a complex/functional image]"</p>
+            <p><strong>Alt-Text:</strong> " ", remember when using decorative imagery to use a single space in the alt text.
+                This is so that the image is skipped by screenreaders.</p>
         </div>
         <div>
             <div class="placeholder-box" style="min-height: 200px;">
-                [Image 2 Placeholder]
+                <Image 
+                    src={join_now} 
+                    alt=" " 
+                    width="200"
+                />
             </div>
             <p><strong>Alt-Text:</strong> "[Write descriptive alt text here for a decorative/ambient image]"</p>
         </div>

@@ -89,6 +89,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.body-list li {
+    margin-bottom: .75em;
+}
+
 /* Respect user preferences for reduced motion */
 @media (prefers-reduced-motion: reduce) {
     html {
