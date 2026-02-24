@@ -14,10 +14,23 @@ import { brandSettings } from '../../scripts/brandSettings.js';
                 <ColorSwatch />
 
                 <h3>Color Usage Policy</h3>
-                <p><strong>Use of Color:</strong> [Define your brand's policy on relying solely on color to convey meaning, state, or information (e.g., in error states or links). Assume your user is marketing and design team membrs who might not have any prior accessibility knowledge.]</p>
+                <!-- [Define your brand's policy on relying solely on color to convey meaning, state, or information (e.g., in error states or links). Assume your user is marketing and design team membrs who might not have any prior accessibility knowledge.] -->
+                <p>Locky and CloakedCyber is a black and white brand. 
+                    Through we use orange, symbolizing innovation. 
+                    We do not rely on our accent color nor should any color alone be used to convey meaning or information.
+                    </p>
 
                 <h3>Text Contrast Playground</h3>
-                <p>[Define the minimum contrast ratio required for normal text vs. large text according to WCAG 2.1 AA, explain to users what the tool below helps them do and how they can use it]</p>
+                <!-- [Define the minimum contrast ratio required for normal text vs. large text according to WCAG 2.1 AA, explain to users what the tool below helps them do and how they can use it] -->
+                <p>When creating new design assets, the create should aim to create within our dark or light asstechic.
+                    If you must devaent from the palette slightly ensure to use sufficient contrast as seen in action on this page.
+                    Use a contrast checker tool like the one below to verify your color choices.
+                    Making sure they meet WCAG 2.1 AA standards while aiming to meet AAA standards.
+                    </p>
+                <ul>
+                    <li><strong>WCAG AA:</strong> Requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.</li>
+                    <li><strong>WCAG AAA:</strong> Requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</li>
+                </ul>
                 
                 <div id="contrast-calculator" class="contrast-calculator" data-palette={JSON.stringify(brandSettings.palette)}>
                     <div class="calculator-controls">
@@ -84,10 +97,14 @@ import { brandSettings } from '../../scripts/brandSettings.js';
                 </div>
 
                 <h3>Non-Text Contrast (UI Elements)</h3>
-                <p>[Define the minimum contrast ratio required for interactive components like buttons, input borders, and icons against their adjacent backgrounds.]</p>
+                <!-- [Define the minimum contrast ratio required for interactive components like buttons, input borders, and icons against their adjacent backgrounds.] -->
+                <p>For UI elements these are element like borders, buttons, and icons, it is required that they follow the minimum contrast ratio.
+                    This ratio is 3:1 against their background, use the methods explainded above to determine if the contrast is sufficient.</p>
 
                 <h3>Inline Links</h3>
-                <p>[Define the visual style for inline links to ensure they are clearly identifiable within content.]</p>
+                <!-- [Define the visual style for inline links to ensure they are clearly identifiable within content.] -->
+                <p>Inline links should not just be visually distinct in color but also in their presentation.
+                    Underlined inline links are recommended for accessibility.</p>
                 <ul>
                     <li><strong>Text Decoration:</strong> [Specify if links are underlined. WCAG recommends underlines so links are distinguishable by more than just color.]</li>
                     <li><strong>Color Contrast:</strong> [Ensure link color meets 4.5:1 contrast against the background.]</li>
