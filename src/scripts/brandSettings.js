@@ -1,35 +1,109 @@
 export const brandSettings = {
     logo: {
-        src: "src/assets/logo/Cloaked Cyber Colored Logo.svg", // Add logo image URL here (e.g., "/assets/logo.png")
+        src: "src/assets/logo/cloaked_cyber_colored_logo.svg", // Add logo image URL here (e.g., "/assets/logo.png")
         alt: "CloakedCyber",
         variations: [ // you might have wordmarks / different color variants than what is listed here, that's fine just adjust it
+            
+            // Logo variations
             { 
-                name: "Primary - Light Background", 
-                src: "src/assets/logo/Cloaked Cyber Colored Black WordMark.svg", // Add image path
+                name: "Primary - Logo", 
+                src: "src/assets/logo/cloaked_cyber_colored_logo.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "Use this version on white or light backgrounds."
+                description: "Use this version in thinner spaces with a white or light backgrounds.",
+                size: "logo"
             },
             { 
-                name: "Primary - Dark Background", 
-                src: "src/assets/logo/Cloaked Cyber Colored White WordMark.svg", // Add image path
-                bg: "#333333", 
+                name: "Primary - Logo", 
+                src: "src/assets/logo/cloaked_cyber_colored_logo.svg", // Add image path
+                bg: "var(--color-rich-black)", 
                 darkText: false,
-                description: "Use this version on dark or brand-colored backgrounds."
+                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
+                size: "logo"
             },
             { 
-                name: "Monochrome - Black", 
-                src: "src/assets/logo/Cloaked Cyber Black WordMark.svg", // Add image path
+                name: "Monochrome - Logo - Black", 
+                src: "src/assets/logo/cloaked_cyber_black_logo.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "For black and white print or single-color applications."
+                description: "For thinner spaces with a black and white print or single-color applications.",
+                size: "logo"
             },
             { 
-                name: "Monochrome - White", 
-                src: "src/assets/logo/Cloaked Cyber White WordMark.svg", // Add image path
-                bg: "#000000", 
+                name: "Monochrome - Logo - White", 
+                src: "src/assets/logo/cloaked_cyber_white_logo.svg", // Add image path
+                bg: "var(--color-deep-black)", 
                 darkText: false,
-                description: "For dark backgrounds where color is not permitted."
+                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
+                size: "logo"
+            },
+
+            // Wordmark variations
+            {
+                name: "Primary - Wordmark - Light", 
+                src: "src/assets/logo/cloaked_cyber_colored_black_wordmark.svg", // Add image path
+                bg: "#ffffff", 
+                darkText: true,
+                description: "Use this version in thinner spaces with a white or light backgrounds.",
+                size: "wordmark"
+            },
+            { 
+                name: "Primary - Wordmark - Dark", 
+                src: "src/assets/logo/cloaked_cyber_colored_white_wordmark.svg", // Add image path
+                bg: "var(--color-rich-black)", 
+                darkText: false,
+                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
+                size: "wordmark"
+            },
+            { 
+                name: "Monochrome - Wordmark - Black", 
+                src: "src/assets/logo/cloaked_cyber_black_wordmark.svg", // Add image path
+                bg: "#ffffff", 
+                darkText: true,
+                description: "For thinner spaces with a black and white print or single-color applications.",
+                size: "wordmark"
+            },
+            { 
+                name: "Monochrome - Wordmark - White", 
+                src: "src/assets/logo/cloaked_cyber_white_wordmark.svg", // Add image path
+                bg: "var(--color-deep-black)", 
+                darkText: false,
+                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
+                size: "wordmark"
+            },
+
+            // 16:9 variations
+            { 
+                name: "Primary - 16 x 9 - Light", 
+                src: "src/assets/logo/cloaked_cyber_colored_black_16x9.svg", // Add image path
+                bg: "#ffffff", 
+                darkText: true,
+                description: "Use this version in thinner spaces with a white or light backgrounds.",
+                size: "16x9"
+            },
+            { 
+                name: "Primary - 16 x 9 - Dark", 
+                src: "src/assets/logo/cloaked_cyber_colored_white_16x9.svg", // Add image path
+                bg: "var(--color-rich-black)", 
+                darkText: false,
+                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
+                size: "16x9"
+            },
+            { 
+                name: "Monochrome - 16 x 9 - Black", 
+                src: "src/assets/logo/cloaked_cyber_black_16x9.svg", // Add image path
+                bg: "#ffffff", 
+                darkText: true,
+                description: "For thinner spaces with a black and white print or single-color applications.",
+                size: "16x9"
+            },
+            { 
+                name: "Monochrome - 16 x 9 - White", 
+                src: "src/assets/logo/cloaked_cyber_white_16x9.svg", // Add image path
+                bg: "var(--color-deep-black)", 
+                darkText: false,
+                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
+                size: "16x9"
             }
         ]
     },
