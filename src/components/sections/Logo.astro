@@ -30,11 +30,20 @@ import InstructionNote from '../InstructionNote.astro';
 
 <style>
     .logo-grid {
+        --logo-card-width: 300px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(var(--logo-card-width), 1fr));
         gap: 2rem;
         margin-top: 2rem;
     }
+
+    @media(max-width: 370px) {
+        .logo-grid {
+            --logo-card-width: 200px;
+        }
+    }
+
+
     .logo-card {
         border: 1px solid var(--border-color);
         border-radius: 8px;
@@ -42,7 +51,7 @@ import InstructionNote from '../InstructionNote.astro';
         background: var(--container-bg);
     }
     .logo-preview {
-        padding: 3rem;
+        padding: 0 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,7 +61,6 @@ import InstructionNote from '../InstructionNote.astro';
     .logo-preview img {
         max-width: 100%;
         height: auto;
-        max-height: 100px;
     }
     .logo-info {
         padding: 1rem;

@@ -393,8 +393,8 @@ th {
     /* Push content down so it's not hidden behind the fixed header */
     .container {
         margin-top: 100px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
         width: auto;
     }
 }
