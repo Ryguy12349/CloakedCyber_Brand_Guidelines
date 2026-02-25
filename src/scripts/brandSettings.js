@@ -70,40 +70,6 @@ export const brandSettings = {
                 darkText: false,
                 description: "For thinner spaces with a dark backgrounds where color is not permitted.",
                 size: "wordmark"
-            },
-
-            // 16:9 variations
-            { 
-                name: "Primary - 16 x 9 - Light", 
-                src: "src/assets/logo/cloaked_cyber_colored_black_16x9.svg", // Add image path
-                bg: "#ffffff", 
-                darkText: true,
-                description: "Use this version in thinner spaces with a white or light backgrounds.",
-                size: "16x9"
-            },
-            { 
-                name: "Primary - 16 x 9 - Dark", 
-                src: "src/assets/logo/cloaked_cyber_colored_white_16x9.svg", // Add image path
-                bg: "var(--color-rich-black)", 
-                darkText: false,
-                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
-                size: "16x9"
-            },
-            { 
-                name: "Monochrome - 16 x 9 - Black", 
-                src: "src/assets/logo/cloaked_cyber_black_16x9.svg", // Add image path
-                bg: "#ffffff", 
-                darkText: true,
-                description: "For thinner spaces with a black and white print or single-color applications.",
-                size: "16x9"
-            },
-            { 
-                name: "Monochrome - 16 x 9 - White", 
-                src: "src/assets/logo/cloaked_cyber_white_16x9.svg", // Add image path
-                bg: "var(--color-deep-black)", 
-                darkText: false,
-                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
-                size: "16x9"
             }
         ]
     },
