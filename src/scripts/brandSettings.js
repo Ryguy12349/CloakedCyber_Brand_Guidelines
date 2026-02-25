@@ -6,27 +6,27 @@ export const brandSettings = {
             
             // Logo variations
             { 
-                name: "Primary - Logo", 
+                name: "Primary - Logo - Light", 
                 src: "src/assets/logo/cloaked_cyber_colored_logo.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "Use this version in thinner spaces with a white or light backgrounds.",
+                // description: "Use this version in thinner spaces with a white or light backgrounds.",
                 size: "logo"
             },
             { 
-                name: "Primary - Logo", 
+                name: "Primary - Logo - Dark", 
                 src: "src/assets/logo/cloaked_cyber_colored_logo.svg", // Add image path
                 bg: "var(--color-rich-black)", 
                 darkText: false,
-                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
+                // description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
                 size: "logo"
             },
             { 
-                name: "Monochrome - Logo - Black", 
+                name: "Monochrome - Logo - Black - Black", 
                 src: "src/assets/logo/cloaked_cyber_black_logo.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "For thinner spaces with a black and white print or single-color applications.",
+                // description: "For thinner spaces with a black and white print or single-color applications.",
                 size: "logo"
             },
             { 
@@ -34,7 +34,7 @@ export const brandSettings = {
                 src: "src/assets/logo/cloaked_cyber_white_logo.svg", // Add image path
                 bg: "var(--color-deep-black)", 
                 darkText: false,
-                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
+                // description: "For thinner spaces with a dark backgrounds where color is not permitted.",
                 size: "logo"
             },
 
@@ -44,7 +44,7 @@ export const brandSettings = {
                 src: "src/assets/logo/cloaked_cyber_colored_black_wordmark.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "Use this version in thinner spaces with a white or light backgrounds.",
+                // description: "Use this version in thinner spaces with a white or light backgrounds.",
                 size: "wordmark"
             },
             { 
@@ -52,7 +52,7 @@ export const brandSettings = {
                 src: "src/assets/logo/cloaked_cyber_colored_white_wordmark.svg", // Add image path
                 bg: "var(--color-rich-black)", 
                 darkText: false,
-                description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
+                // description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.",
                 size: "wordmark"
             },
             { 
@@ -60,7 +60,7 @@ export const brandSettings = {
                 src: "src/assets/logo/cloaked_cyber_black_wordmark.svg", // Add image path
                 bg: "#ffffff", 
                 darkText: true,
-                description: "For thinner spaces with a black and white print or single-color applications.",
+                // description: "For thinner spaces with a black and white print or single-color applications.",
                 size: "wordmark"
             },
             { 
@@ -68,7 +68,7 @@ export const brandSettings = {
                 src: "src/assets/logo/cloaked_cyber_white_wordmark.svg", // Add image path
                 bg: "var(--color-deep-black)", 
                 darkText: false,
-                description: "For thinner spaces with a dark backgrounds where color is not permitted.",
+                // description: "For thinner spaces with a dark backgrounds where color is not permitted.",
                 size: "wordmark"
             }
         ]

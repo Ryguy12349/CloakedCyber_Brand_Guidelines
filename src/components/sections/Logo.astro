@@ -12,22 +12,66 @@ import InstructionNote from '../InstructionNote.astro';
         Upload and document your logo variations here. Ensure you provide versions for light and dark backgrounds, as well as monochrome options for print or restricted color environments.
     </InstructionNote>
 
+    <!-- description: "Use this version in thinner spaces with a white or light backgrounds.", -->
+    <!-- description: "Use this version in thinner spaces with a dark or brand-colored backgrounds.", -->
+    <!-- description: "For thinner spaces with a black and white print or single-color applications.", -->
+    <!-- "For thinner spaces with a dark backgrounds where color is not permitted.", -->
+    <ul class="body-list">
+        <li><strong>Light:</strong> Use this version with a white or light backgrounds.</li>
+        <li><strong>Dark:</strong> Use this version with a dark or brand-colored backgrounds.</li>
+        <li><strong>Black:</strong> Use this version with a black and white print or single-color applications.</li>
+        <li><strong>White:</strong> Use this version with a dark backgrounds where color is not permitted.</li>
+    </ul>
+
+
+    <h3>Textless Logo</h3>
+    <p>
+        The textless logo is a version of the logo that does not include any text or company name.
+        It should be used in contexts where the brand is already well-known, or where space is limited, such as on social media profile pictures, favicons, or small merchandise items.
+        Ensure that the textless logo maintains its integrity and is easily recognizable even without the accompanying text.
+    </p>
     <div class="logo-grid">
-        {brandSettings.logo.variations.map(variation => (
-            <div class="logo-card">
-                <div class="logo-preview" style={`background-color: ${variation.bg}; color: ${variation.darkText ? '#000' : '#fff'}`}>
-                    {variation.src ? (
-                        <img src={variation.src} alt={`${brandSettings.logo.alt} - ${variation.name}`} />
-                    ) : (
-                        <div class="placeholder-text">[Logo: {variation.name}]</div>
-                    )}
-                </div>
-                <div class="logo-info">
-                    <h4>{variation.name}</h4>
-                    <p>{variation.description}</p>
-                </div>
-            </div>
-        ))}
+        {brandSettings.logo.variations
+            .filter(variation => variation.size === "logo")
+                .map(variation => (
+                    <div class="logo-card">
+                        <div class="logo-preview" style={`background-color: ${variation.bg}; color: ${variation.darkText ? '#000' : '#fff'}`}>
+                            {variation.src ? (
+                                <img src={variation.src} alt={`${brandSettings.logo.alt} - ${variation.name}`} />
+                            ) : (
+                                <div class="placeholder-text">[Logo: {variation.name}]</div>
+                            )}
+                        </div>
+                        <div class="logo-info">
+                            <h4>{variation.name}</h4>
+                        </div>
+                    </div>
+                ))}
+    </div>
+
+    <h3>Wordmark</h3>
+    <p>
+        The wordmark is a version of the logo that includes the company name in a stylized font.
+        It should be used in contexts where brand recognition is important, such as on marketing materials, websites, and social media profiles.
+        Ensure that the wordmark is legible and maintains its integrity across different sizes and backgrounds.
+    </p>
+    <div class="logo-grid">
+        {brandSettings.logo.variations
+            .filter(variation => variation.size === "wordmark")
+                .map(variation => (
+                    <div class="logo-card">
+                        <div class="logo-preview" style={`background-color: ${variation.bg}; color: ${variation.darkText ? '#000' : '#fff'}`}>
+                            {variation.src ? (
+                                <img src={variation.src} alt={`${brandSettings.logo.alt} - ${variation.name}`} />
+                            ) : (
+                                <div class="placeholder-text">[Logo: {variation.name}]</div>
+                            )}
+                        </div>
+                        <div class="logo-info">
+                            <h4>{variation.name}</h4>
+                        </div>
+                    </div>
+                ))}
     </div>
 </section>
 
