@@ -3,13 +3,14 @@ import InstructionNote from '../InstructionNote.astro';
 
 import Image from 'astro/components/Image.astro';
 import join_now from '../../assets/join_now.webp';
+import Iphone_mockup from '../../assets/Iphone_mockup.webp';
 ---
 <section id="imagery">
     <h2>Imagery</h2>
     
-    <InstructionNote>
+    <!-- <InstructionNote>
         Define your brand's specific rules for handling multimedia accessibility, including policies on embedded text, video captions, and motion design. Provide alt-text examples for your visual assets.
-    </InstructionNote>
+    </InstructionNote> -->
 
     <h3>Multimedia Policies</h3>
     <ul class="body-list">
@@ -44,12 +45,12 @@ import join_now from '../../assets/join_now.webp';
         <div>
             <div class="placeholder-box" style="min-height: 200px;">
                 <Image 
-                    src={join_now} 
+                    src={Iphone_mockup} 
                     alt=" " 
                     width="200"
                 />
             </div>
-            <p><strong>Alt-Text:</strong> "[Write descriptive alt text here for a decorative/ambient image]"</p>
+            <p><strong>Alt-Text:</strong> "iPhone mockup, showing off what would appear on our instagram page."</p>
         </div>
     </div>
 </section>
